@@ -2,3 +2,7 @@ mlflow
 numpy
 pandas
 scikit-learn
+keras
+tensorflow-macos
+tensorflow-metal
+hyperopt
