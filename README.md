@@ -5,8 +5,11 @@ This project explores training and tracking an Artificial Neural Network (ANN) u
 ## Overview
 
 The goal of this project is to:
-- Train ANN models for regression/classification
+- Run a hyperparameter sweep for fine-tuning
 - Track experiments, parameters, metrics, and artifacts using MLflow
+- Choose the best run to register in MLflow model registry
+- Deploy model to a REST API
+- Building a container image suitable for deployment to a cloud platform
 - Demonstrate a clean local MLOps workflow on macOS
 
 ## Project Structure
@@ -21,7 +24,7 @@ mlflow_ann_dl/
 
 ## Prerequisites
 
-- Python 3.1
+- Python 3.10 / Python 3.9
 - macOS (Apple Silicon recommended)
 - Git
 
@@ -33,8 +36,9 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Installing required dependencies:
+Upgrading setup tools wheels and installing required dependencies:
 ```bash
+pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
 
