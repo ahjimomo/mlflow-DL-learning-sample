@@ -2,6 +2,8 @@
 
 This project explores training and tracking an Artificial Neural Network (ANN) using MLflow for experiment management.
 
+We will be using the [white wine quality dataset on GitHub](https://raw.githubusercontent.com/stedy/Machine-Learning-with-R-datasets/master/whitewines.csv) for this exercise. 
+
 ## Overview
 
 The goal of this project is to:
@@ -17,6 +19,11 @@ The goal of this project is to:
 ```text
 mlflow_ann_dl/
 ├── requirements.in     # Top-level dependencies
+├── rdl_ann.ipynb       # Script to build & log model
+├── inference.ipynb     # Script to load registered model (Future)
+├── Data/
+|   ├── test_x.csv
+├   └── test_y.csv
 ├── requirements.txt    # Locked dependencies
 ├── README.md
 └── .gitignore
@@ -52,5 +59,7 @@ mlflow ui
 ```
 
 ## Future Improvements
-
+- To enable inferencing of the best model and to use it as practice
+    - notebook to be named `inference.ipynb`
+    - Test data saved in file `./data/test.csv` for usage
 
