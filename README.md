@@ -22,8 +22,7 @@ mlflow_ann_dl/
 ├── rdl_ann.ipynb       # Script to build & log model
 ├── inference.ipynb     # Script to load registered model (Future)
 ├── Data/
-|   ├── test_x.csv
-├   └── test_y.csv
+|   └── test.csv        # Data hidden from model for testing
 ├── requirements.txt    # Locked dependencies
 ├── README.md
 └── .gitignore
@@ -49,7 +48,7 @@ pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```
 
-##  Running Projects
+##  Run Projects
 
 This project uses Jupyter Notebook for ease of reading.
 
@@ -62,4 +61,3 @@ mlflow ui
 - To enable inferencing of the best model and to use it as practice
     - notebook to be named `inference.ipynb`
     - Test data saved in file `./data/test.csv` for usage
-
