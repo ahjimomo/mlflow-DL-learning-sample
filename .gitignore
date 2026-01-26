@@ -5,6 +5,7 @@ __pycache__/
 
 # MLflow
 mlruns/
+mlflow.db
 
 # OS / editor
 .DS_Store
