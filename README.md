@@ -10,9 +10,7 @@ The goal of this project is to:
 - Run a hyperparameter sweep for fine-tuning
 - Track experiments, parameters, metrics, and artifacts using MLflow
 - Choose the best run to register in MLflow model registry
-- Deploy model to a REST API
-- Building a container image suitable for deployment to a cloud platform
-- Demonstrate a clean local MLOps workflow on macOS
+- Infer logged model and run it on test data
 
 ## Project Structure
 
@@ -58,6 +56,6 @@ mlflow ui
 ```
 
 ## Future Improvements
-- To enable inferencing of the best model and to use it as practice
+[x] To enable inferencing of the best model and to use it as practice
     - notebook to be named `inference.ipynb`
     - Test data saved in file `./data/test.csv` for usage
